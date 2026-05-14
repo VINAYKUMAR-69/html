@@ -1,0 +1,38 @@
+<?php
+$conn = new mysqli("localhost","root","","exam_seating");
+$sql = "SELECT * FROM students WHERE exam_type='Govt'";
+$result = $conn->query($sql);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Govt Exam Dashboard</title>
+<style>
+table { width: 100%; border-collapse: collapse; margin-top: 20px;}
+th, td { border: 1px solid #ccc; padding: 10px; text-align: center;}
+th { background: #007BFF; color: white; }
+button { margin-top: 10px; padding: 10px 15px; background: green; color: white; border: none; border-radius: 5px; cursor:pointer;}
+button:hover { background: darkgreen; }
+</style>
+</head>
+<body>
+<h2>Govt Exam Dashboard</h2>
+<table>
+<tr><th>Name</th><th>Hall Ticket</th><th>Date</th><th>Session</th></tr>
+<?php
+if($result->num_rows>0){
+    while($row=$result->fetch_assoc()){
+        echo "<tr>
+        <td>{$row['name']}</td>
+        <td>{$row['hall_ticket']}</td>
+        <td>{$row['exam_date']}</td>
+        <td>{$row['session']}</td>
+        </tr>";
+    }
+} else { echo "<tr><td colspan='4'>No govt exam students found</td></tr>"; }
+?>
+</table>
+<button onclick="window.print()">Print Govt Exam Seating</button>
+</body>
+</html>
