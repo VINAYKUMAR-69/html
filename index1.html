@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KeyBoard Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <style>
+             body{
+            background-color:orange;
+        }
+            .top-positions,
+            .second-position,
+            .middle-positions,
+            .third-position,
+            .fourth-position,
+            .top{
+                margin:15px;
+                margin-top:10px;
+                padding:20px;
+                border-radius:5px;
+                border:none;
+                font-size:20px;
+                font-weight:bold;
+                cursor:pointer;
+
+            }
+             .top-positions:hover,
+            .second-position:hover,
+            .middle-positions:hover,
+            .third-position:hover,
+            .fourth-position:hover,
+            .top:hover{
+                background-color:rgba(0,0,0,0.5);
+                
+            }
+            .top{
+                margin:5px;
+                background-color:blueviolet;
+                color:white;
+            }
+            .top-positions{
+                background-color:cyan;
+            }
+            .second-position{
+                background-color:lightseagreen;
+            }
+            .middle-positions{
+                background-color:lightgreen;
+            }
+            .third-position{
+                background-color:lightpink;
+            }
+            .fourth-position{
+                background-color:lightgoldenrodyellow;
+            }
+            .top:active{
+                background-color:dimgray;
+                color:black;
+                font-size:21px;
+            }
+            .top-positions:active{
+                background-color:darkcyan;
+                font-size:21px;
+           }
+            .second-position:active{
+                background-color:cyan;
+                font-size:21px;
+            }
+            .middle-positions:active{
+                background-color:aquamarine;
+                font-size:21px;
+            }
+            .third-position:active{
+                background-color:deeppink;
+                font-size:21px;
+            }
+            .fourth-position:active{
+                background-color:orangered;
+                color:white;
+                font-size:21px;
+            }
+            .buttons {
+              display:flex;
+              align-items:center;
+              justify-content:center;  
+            }
+           
+            .unique{
+                background-color:brown;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="buttons">
+            <button class="top">esc</button>
+            <button class="top">?</button>
+            <button class="top">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-lock"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-keyboard"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-volume-xmark"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-volume-low"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+        
+            <button class="top">
+                <i class="fa-solid fa-backward-fast"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-pause"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-forward-fast"></i>
+            </button>
+            <button class="top">
+                <i class="fa-solid fa-plane-up"></i>
+            </button>
+            <button class="top">prtsc</button>
+            <button class="top">delete</button>
+            <button class="top">home</button>
+            <button class="top">end</button>
+            <button class="top">pg up</button>
+            <button class="top">pg dn</button>
+        </div>
+            <div class="buttons">
+                    <button class="top-positions">`</button>
+                    <button class="top-positions ">1</button>
+                    <button class="top-positions ">2</button>
+                    <button class="top-positions ">3</button>
+                    <button class="top-positions ">4</button>
+                    <button class="top-positions ">5</button>
+                    <button class="top-positions ">6</button>
+                    <button class="top-positions ">7</button>
+                    <button class="top-positions ">8</button>
+                    <button class="top-positions ">9</button>
+                    <button class="top-positions ">0</button>
+                    <button class="top-positions ">-</button>
+                    <button class="top-positions ">=</button>
+                    <button class="top-positions unique" >backspace</button>
+                    <button class="top-positions unique " style="padding:10px;">num lock</button>
+                    <button class="top-positions ">/</button>
+                    <button class="top-positions ">*</button>
+                    <button class="top-positions ">-</button>
+            </div>
+
+            <div class="buttons">
+                <button class="second-position unique">tab&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <button class="second-position">q</button>
+                <button class="second-position">w</button>
+                <button class="second-position">e</button>
+                <button class="second-position">r</button>
+                <button class="second-position">t</button>
+                <button class="second-position">y</button>
+                <button class="second-position">u</button>
+                <button class="second-position">i</button>
+                <button class="second-position">o</button>
+                <button class="second-position">p</button>
+                <button class="second-position">&nbsp;[&nbsp;</button>
+                <button class="second-position">&nbsp;]&nbsp;</button>
+                <button class="second-position">&nbsp;\&nbsp;</button>
+                <button class="second-position">7</button>
+                <button class="second-position">8</button>
+                <button class="second-position">9</button>
+                <button class="second-position" >+</button>
+            </div>
+
+            <div class="buttons">
+                <button class="middle-positions unique">&nbsp;&nbsp;&nbsp;capslock&nbsp;&nbsp;&nbsp;</button>
+                <button class="middle-positions">a</button>
+                <button class="middle-positions">s</button>
+                <button class="middle-positions">d</button>
+                <button class="middle-positions">f</button>
+                <button class="middle-positions">g</button>
+                <button class="middle-positions">h</button>
+                <button class="middle-positions">j</button>
+                <button class="middle-positions">k</button>
+                <button class="middle-positions">l</button>
+                <button class="middle-positions">;</button>
+                <button class="middle-positions">'</button>
+                <button class="middle-positions unique">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <button class="middle-positions">4</button>
+                <button class="middle-positions">5</button>
+                <button class="middle-positions">6</button>
+            </div>
+
+            <div class="buttons">
+                <button class="third-position unique"style="padding:0;"><pre>   shift            </pre></button>
+                <button class="third-position">z</button>
+                <button class="third-position">x</button>
+                <button class="third-position">c</button>
+                <button class="third-position">v</button>
+                <button class="third-position">b</button>
+                <button class="third-position">n</button>
+                <button class="third-position">m</button>
+                <button class="third-position">,</button>
+                <button class="third-position">.</button>
+                <button class="third-position">/</button>
+                <button class="third-position unique" style="padding:0">
+                    <pre>  shift          </pre></button>
+                <button class="third-position">1</button>
+                <button class="third-position">2</button>
+                <button class="third-position">3</button>
+            </div>
+            
+            <div class="buttons">
+                <button class="fourth-position unique">ctrl</button>
+                <button class="fourth-position">fn</button>
+                <button class="fourth-position" >
+                    <i class="fab fa-windows"></i>
+                </button>
+                <button class="fourth-position">alt</button>
+                <button class="fourth-position "style="padding:0;"><pre>                spacebar           </pre></button>
+                <button class="fourth-position">alt</button>
+                <button class="fourth-position">ctrl</button>
+                <button class="fourth-position"><</button>
+                <button class="fourth-position">^</button>
+                <button class="fourth-position">></button>
+                <button class="fourth-position">0</button>
+                <button class="fourth-position">.</button>
+                <button class="third-position unique">enter</button>
+            </div>
+    </body>
+</html>
